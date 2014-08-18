@@ -4,6 +4,7 @@
   "Escribir una funcion que retorne solamente los numeros impares de
    una secuencia"
   [s]
+  (for [x s] (if(not=(mod x 2)0)x))
   )
 
 (defn nil-key
@@ -15,7 +16,12 @@
   "Escribir una funcion que cree una lista de enteros en un rango dado.
    Restricciones: range"
   [start end]
+  (def contador start)
+  (print contador)
+  (= contador start)
+  (while (< contador end) (do(def contador (+ contador 1)) (print " ") ( print contador )))
   )
+  
 
 (defn compress-sequence
   "Escribir una funcion que elimine los duplicados consecutivos
